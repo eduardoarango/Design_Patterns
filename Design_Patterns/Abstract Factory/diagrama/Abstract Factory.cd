@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Design_Patterns.Abstract_Factory.DAOFactory">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAgAAAAACQAAAAQAAAgAAAAAAAQAAAAA=</HashCode>
+      <FileName>Abstract Factory\DAOFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Design_Patterns.Abstract_Factory.gresqlDAOFactory" Collapsed="true">
+    <Position X="8.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract Factory\gresqlDAOFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Design_Patterns.Abstract_Factory.jdbcDAOFactory">
+    <Position X="3" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract Factory\jdbcDAOFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Design_Patterns.Abstract_Factory.msqlDAOFactory" Collapsed="true">
+    <Position X="4" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract Factory\msqlDAOFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Design_Patterns.Abstract_Factory.mysqlDAOFactory" Collapsed="true">
+    <Position X="10" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Abstract Factory\mysqlDAOFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Design_Patterns.Abstract_Factory.dao.MySql.MySqlUsuarioDAO">
+    <Position X="6.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Abstract Factory\dao\MySql\MySqlUsuarioDAO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.539" Collapsed="true" />
+  </Class>
+  <Class Name="Design_Patterns.Abstract_Factory.dao.Oracle.OracleUsuarioDAO">
+    <Position X="9" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Abstract Factory\dao\Oracle\OracleUsuarioDAO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.56" />
+  </Class>
+  <Class Name="Design_Patterns.Abstract_Factory.dao.SqlServer.SqlServerUsuarioDAO">
+    <Position X="4.25" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Abstract Factory\dao\SqlServer\SqlServerUsuarioDAO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Orientation="Left" Position="0.164" />
+  </Class>
+  <Interface Name="Design_Patterns.Abstract_Factory.UsuarioDAO">
+    <Position X="1.75" Y="4" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Abstract Factory\dao\UsuarioDAO.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

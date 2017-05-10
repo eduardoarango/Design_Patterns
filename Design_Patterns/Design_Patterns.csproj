@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{24AEF764-BD69-49C2-AFD6-BB9A5F40DE7E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Design_Patterns</RootNamespace>
+    <AssemblyName>Design_Patterns</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="oracle.dataaccess, Version=4.112.2.0, Culture=neutral, PublicKeyToken=89b483f429c47342, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\AppGesDocumento\lib\oracle.dataaccess.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Abstract Factory\DAOFactory.cs" />
+    <Compile Include="Abstract Factory\dao\MySql\MySqlUsuarioDAO.cs" />
+    <Compile Include="Abstract Factory\dao\Oracle\OracleUsuarioDAO.cs" />
+    <Compile Include="Abstract Factory\dao\PostGresql\PostGresqlUsuarioDAO.cs" />
+    <Compile Include="Abstract Factory\dao\SqlServer\SqlServerUsuarioDAO.cs" />
+    <Compile Include="Abstract Factory\dto\Cliente.cs" />
+    <Compile Include="Abstract Factory\dto\Producto.cs" />
+    <Compile Include="Abstract Factory\dto\Usuario.cs" />
+    <Compile Include="Abstract Factory\gresqlDAOFactory.cs" />
+    <Compile Include="Abstract Factory\msqlDAOFactory.cs" />
+    <Compile Include="Abstract Factory\mysqlDAOFactory.cs" />
+    <Compile Include="Abstract Factory\jdbcDAOFactory.cs" />
+    <Compile Include="Abstract Factory\dao\UsuarioDAO.cs" />
+    <Compile Include="Builder\FormatoExcel.cs" />
+    <Compile Include="Builder\FormatoHTML.cs" />
+    <Compile Include="Builder\FormatoPDF.cs" />
+    <Compile Include="Builder\FormatoWord.cs" />
+    <Compile Include="Builder\GenerarInformeBuilder.cs" />
+    <Compile Include="Builder\Informe.cs" />
+    <Compile Include="AbstractFactory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Abstract-Factory.Designer.cs">
+      <DependentUpon>AbstractFactory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decoratorform.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Decoratorform.Designer.cs">
+      <DependentUpon>Decoratorform.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Decorator\Email.cs" />
+    <Compile Include="Decorator\EmailDecorator.cs" />
+    <Compile Include="Decorator\ExternalEmailDecorator.cs" />
+    <Compile Include="Decorator\IEmail.cs" />
+    <Compile Include="Decorator\SecureEmailDecorator.cs" />
+    <Compile Include="Decorator\Sender.cs" />
+    <Compile Include="DelegationFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DelegationFrm.Designer.cs">
+      <DependentUpon>DelegationFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Delegation\Cliente.cs" />
+    <Compile Include="Delegation\Empleado.cs" />
+    <Compile Include="Delegation\EmpleadoTiendaCliente.cs" />
+    <Compile Include="Delegation\InterfaceDlgt.cs" />
+    <Compile Include="FacadeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FacadeForm.Designer.cs">
+      <DependentUpon>FacadeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainPrincipal.Designer.cs">
+      <DependentUpon>MainPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObserverFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ObserverFrm.Designer.cs">
+      <DependentUpon>ObserverFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Observer\Administracion.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Observer\AlarmaLibro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Observer\Biblioteca.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Observer\Compras.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Observer\ILibroEstado.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Observer\Libro.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Observer\Stock.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Observer\Subject.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ProxyFrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ProxyFrm.Designer.cs">
+      <DependentUpon>ProxyFrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Proxy\ConnectionManager.cs" />
+    <Compile Include="Proxy\GuardarDatos.cs" />
+    <Compile Include="Proxy\GuardarDiscoDuro.cs" />
+    <Compile Include="Proxy\GuardarDiscoExterno.cs" />
+    <Compile Include="Proxy\IGuardar.cs" />
+    <Compile Include="Singletonfrm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Singletonfrm.Designer.cs">
+      <DependentUpon>Singletonfrm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Singleton\dbConexionSingleto.cs" />
+    <EmbeddedResource Include="Abstract-Factory.resx">
+      <DependentUpon>AbstractFactory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Decoratorform.resx">
+      <DependentUpon>Decoratorform.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DelegationFrm.resx">
+      <DependentUpon>DelegationFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FacadeForm.resx">
+      <DependentUpon>FacadeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainPrincipal.resx">
+      <DependentUpon>MainPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ObserverFrm.resx">
+      <DependentUpon>ObserverFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="ProxyFrm.resx">
+      <DependentUpon>ProxyFrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Singletonfrm.resx">
+      <DependentUpon>Singletonfrm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Abstract Factory\diagrama\Abstract Factory.cd" />
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Decorator\diagrama\Decorator.cd" />
+    <None Include="Delegation\digrama\delegatordiagram.cd" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Singleton\diagrama\SingletoDiagram.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Observer\diagrama\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
